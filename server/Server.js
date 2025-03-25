@@ -5,7 +5,7 @@ import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const app = express();
-const DB_PATH = path.join(__dirname, '../db/passes.json');
+const DB_PATH = path.join(__dirname, '../db/qr.json');
 app.use(express.json());
 
 app.get('/api/qr/:userId', (req, res) => {
