@@ -1,0 +1,75 @@
+body {
+    background: linear-gradient(135deg, #edb1e8, #a4e2e8, #e1f0a9);
+}
+
+.pass-container {
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    max-width: 400px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.pass-title {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    font-size: 1.75rem;
+}
+
+.pass-id {
+    font-size: 1rem;
+    opacity: 0.9;
+    margin-bottom: 1.5rem;
+}
+
+.pass-qr-container {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 1rem 0;
+}
+
+.pass-date {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.scan-text {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+
+.pass-card {
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+    overflow: hidden;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pass-card:hover {
+    transform: translateY(-5px);
+}
+
+.pass-qr-small {
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 1rem 0;
+}
+
+@media (max-width: 768px) {
+    .pass-container {
+        padding: 1.5rem;
+    }
+
+    .pass-title {
+        font-size: 1.5rem;
+    }
+}
