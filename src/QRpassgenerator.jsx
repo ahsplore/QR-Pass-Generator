@@ -14,7 +14,7 @@ const QRPassGenerator = () => {
 
   const savePass = async (pass) => {
     try {
-      const response = await fetch('http://localhost:3000/api/qr', {
+      const response = await fetch('https://qr-pass-generator-2sos.onrender.com/api/qr', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(pass)
@@ -29,7 +29,7 @@ const QRPassGenerator = () => {
 
   const getPasses = async (userId) => {
     try {
-      const response = await fetch(`http://localhost:3000/api/qr/${userId}`);
+      const response = await fetch(`https://qr-pass-generator-2sos.onrender.com/api/qr/${userId}`);
       if (!response.ok) throw new Error('Failed to fetch passes');
       return await response.json();
     } catch (err) {
