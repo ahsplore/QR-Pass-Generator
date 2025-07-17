@@ -42,6 +42,11 @@ app.post('/api/qr', (req, res) => {
 
 });
 
+
+app.get('/', (req, res) => {
+  res.send('Backend is live');
+});
+
 function getPass() {
 
     if (!fs.existsSync(DB_PATH)) return [];
@@ -56,10 +61,8 @@ function savePass(passes) {
   
 }
 
-app.get('/', (req, res) => {
-  res.send('Backend is live');
-});
+const PORT = process.env.PORT || 3000;
 
-app.listen(3000, () => {
-  console.log('Server running on http://localhost:3000');
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });
