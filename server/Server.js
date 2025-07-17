@@ -56,6 +56,10 @@ function savePass(passes) {
   
 }
 
+app.get('/', (req, res) => {
+  res.send('Backend is live');
+});
+
 app.listen(3000, () => {
   console.log('Server running on http://localhost:3000');
 });
